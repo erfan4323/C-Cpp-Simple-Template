@@ -7,12 +7,14 @@
 #include "lib/hlp/help.h"
 #include "lib/util.h"
 
+void CustomLog(int msgType, const char* text, va_list args) { return; }
+
 int main()
 {
     int screenWidth = 635;
     int screenHeight = 450;
 
-
+    SetTraceLogCallback(CustomLog);
     InitWindow(screenWidth, screenHeight, "Ant City DSA Project");
 
 
