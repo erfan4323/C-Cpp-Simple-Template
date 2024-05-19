@@ -11,7 +11,6 @@ LIBS := -lraylib -lopengl32 -lgdi32 -lwinmm
 
 # Source files
 SRC := $(wildcard src/*.cpp) main.cpp
-#SRC := $(shell find src -name '*.cpp') main.cpp
 
 # Header files
 HDR := $(wildcard lib/*.h)
