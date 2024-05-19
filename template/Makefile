@@ -4,7 +4,12 @@
 CC := g++
 
 # Compiler flags
-CFLAGS := -Wno-enum-compare -Wno-missing-field-initializers -Wno-unused-parameter -Wfatal-errors -Wall -Wextra -std=c++20 -ID:\\Erfan\\Git-Download\\vcpkg\\installed\\x64-windows\\include 
+CFLAGS_COMMON := -Wno-enum-compare -Wno-missing-field-initializers -Wno-unused-parameter -Wfatal-errors -Wall -Wextra
+CFLAGS_Version := -std=c++20
+CFLAGS_Link := -ID:\\Erfan\\Git-Download\\vcpkg\\installed\\x64-windows\\include
+
+# Combine sections into one variable
+CFLAGS := $(CFLAGS_COMMON) $(CFLAGS_Version) $(CFLAGS_Link)
 
 # Libraries
 LIBS := -lraylib -lopengl32 -lgdi32 -lwinmm
