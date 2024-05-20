@@ -33,9 +33,7 @@ int main()
         GuiGroupBox(Rectangle{ 24, 48, 584, 384 }, "Ant City");
         GuiGroupBox(Rectangle{ 248, 72, 168, 296 }, "Decoder Output:");
 
-        if (GuiButton(Rectangle{ 424, 72, 168, 32 }, "Accept"))
-        {
-        }
+        if (GuiButton(Rectangle{ 424, 72, 168, 32 }, "Accept"));
 
         GuiGroupBox(Rectangle{ 424, 120, 168, 248 }, "Parent.txt Values:");
         GuiGroupBox(Rectangle{ 40, 72, 200, 296 }, "Encoder Input:");

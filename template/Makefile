@@ -4,7 +4,7 @@
 CC := g++
 
 # Compiler flags
-CFLAGS_COMMON := -Wno-enum-compare -Wno-missing-field-initializers -Wno-unused-parameter -Wfatal-errors -Wall -Wextra
+CFLAGS_COMMON := -Wno-empty-body -Wno-enum-compare -Wno-missing-field-initializers -Wno-unused-parameter -Wfatal-errors -Wall -Wextra
 CFLAGS_Version := -std=c++20
 CFLAGS_Link := -ID:\\Erfan\\Git-Download\\vcpkg\\installed\\x64-windows\\include
 
